@@ -5,6 +5,7 @@ import android.content.SearchRecentSuggestionsProvider
 class CustomSuggestionProvider: SearchRecentSuggestionsProvider() {
     init {
         setupSuggestions(AUTHORITY, MODE)
+        sdfdfgfghgfhjghjgh
     }
 
     companion object {
