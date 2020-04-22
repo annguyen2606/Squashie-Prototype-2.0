@@ -4,15 +4,94 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:theme="@style/AppTheme"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        tools:context=".Home">
 
+        <TextView
+            android:id="@+id/textViewPlayingSong"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:background="@color/colorTextBackGround"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/salsa"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/welcome"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="433dp"
+            android:layout_height="395dp"
+            android:layout_marginStart="424dp"
+            android:layout_marginEnd="423dp"
+            android:src="@drawable/squash_land_logo"
+            app:layout_constraintBottom_toTopOf="@+id/textViewNextSong"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPlayingSong" />
+
+        <TextView
+            android:id="@+id/textViewNextSong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTextBackGround"
+            android:fontFamily="@font/salsa"
+            android:text="Next song:"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/buttonChooseASong"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <Button
+            android:id="@+id/buttonChooseASong"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="231dp"
+            android:layout_height="47dp"
+            android:layout_marginBottom="36dp"
+            android:background="@color/colorTextBackGround"
+            android:fontFamily="@font/salsa"
+            android:text="Choose A Song"
+            android:textColor="@color/colorText"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buttonRequestNewSong"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/buttonRequestNewSong"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="231dp"
+            android:layout_height="47dp"
+            android:layout_marginBottom="36dp"
+            android:background="@color/colorTextBackGround"
+            android:fontFamily="@font/salsa"
+            android:text="Request New Song"
+            android:textColor="@color/colorText"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/buttonChooseASong" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

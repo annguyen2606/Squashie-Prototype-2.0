@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="3dp">
+
+    <TextView
+        android:id="@+id/songItem"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:paddingLeft="5sp"
+        android:background="@color/colorTextBackGround"
+        android:fontFamily="@font/salsa"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

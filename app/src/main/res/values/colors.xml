@@ -2,5 +2,12 @@
 <resources>
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorText">#FFFFFC</color>
+    <color name="colorTextBackGround">#E61937</color>
+    <color name="colorSquashie">#E61937</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="colorWhite">#FFFFFC</color>
+    <color name="colorAlert">#FF7F11</color>
+    <color name="colorGreenBackground">#CBE896</color>
+    <color name="colorRecyclerViewItemBackground">#BEB7A4</color>
 </resources>
